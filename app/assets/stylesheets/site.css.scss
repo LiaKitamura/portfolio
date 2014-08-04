@@ -1,4 +1,50 @@
-.description {
-  max-height: 65px;
+// *** about section *** //
+
+.row.about2 {
+  width: 80%;
+  margin: auto;
+
+  div:first-child {
+    border-right: 1px solid deepskyblue;
+  }
+}
+
+#about .about-paragraph {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: justify;
   overflow: auto;
+}
+
+.description {
+  height: 90px;
+  overflow: auto;
+  font-size: large;
+}
+
+// *** project section *** //
+
+.caption {
+
+  h3 {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+    margin-top: 3%;
+  }
+}
+
+// **
+
+@media (min-width: 768px) {
+  // .section { padding-top:132px;}
+  #about .about-paragraph {
+
+  }
+}
+
+@media (min-width: 992px) {
+
 }
