@@ -1,2 +1,9 @@
 @import 'bootstrap';
 @import 'magister';
+@import 'site';
+
+#about .about-paragraph {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  overflow: auto;
+}
