@@ -36,6 +36,18 @@
   }
 }
 
+.tool-list img {
+  display: inline-block;
+  min-width: 45px;
+  min-height: 50px;
+}
+
+// *** contact *** //
+
+.list-social {
+  font-size: 300%;
+}
+
 // **
 
 @media (min-width: 768px) {
