@@ -55,24 +55,18 @@
 
     h3 {
       margin-top: 5px;
+      font-size: larger;
     }
     .description {
       height: 90px;
       overflow: auto;
       font-size: large;
-      p {
-
+      a:hover {
+        color: deepskyblue;
       }
     }
   }
 }
-
-n
-//   p:last-child {
-//     margin-bottom: 0;
-//     margin-top: 3%;
-//   }
-// }
 
 .tool-list img {
   display: inline-block;
