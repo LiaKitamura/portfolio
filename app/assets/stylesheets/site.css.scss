@@ -1,28 +1,55 @@
 // *** about section *** //
 
-.row.about2 {
-  width: 80%;
-  margin: auto;
+#about {
+  .row.about2 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    max-height: 300px;
+    border-radius: 10px;
 
-  div:first-child {
-    border-right: 1px solid deepskyblue;
+    h4 {
+      font-size: 20px;
+    }
+    div:first-child,
+    .hobby {
+      overflow: auto;
+      min-height: 300px;
+      padding: 5px 20px 20px;
+    }
+    div:first-child {
+      height: 300px;
+      border-right: 1px solid deepskyblue;
+    }
+    .about-paragraph {
+      background: rgba(0, 0, 0, 0.3);
+      color: white;
+      text-align: justify;
+      overflow: auto;
+
+      .about-links {
+        margin: 20px auto;
+        .git {
+          color: lightskyblue;
+        }
+        .linked {
+          color: deepskyblue;
+        }
+        .googs {
+          color: red;
+        }
+      }
+    }
   }
 }
 
-#about .about-paragraph {
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  text-align: justify;
-  overflow: auto;
-}
+// *** project section *** //
 
 .description {
   height: 90px;
   overflow: auto;
   font-size: large;
 }
-
-// *** project section *** //
 
 .caption {
 
