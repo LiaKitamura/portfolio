@@ -30,13 +30,13 @@
       .about-links {
         margin: 20px auto;
         .git {
-          color: lightskyblue;
+          color: black;
         }
         .linked {
-          color: deepskyblue;
+          color: #0482cc;
         }
         .googs {
-          color: red;
+          color: #e51c23;
         }
       }
     }
@@ -76,8 +76,29 @@
 
 // *** contact *** //
 
-.list-social {
-  font-size: 300%;
+#contact {
+  p,
+  h3 {
+    font-size: 30px;
+    color: ghostwhite;
+  }
+  h3 {
+    color: paleturquoise;
+    margin: 45px auto;
+  }
+  .list-social {
+    font-size: 450%;
+
+    .fa-google-plus-square {
+      color: #e51c23;
+    }
+    .fa-github-square {
+      color: black;
+    }
+    .fa-linkedin-square {
+      color: #007CB0;
+    }
+  }
 }
 
 // **
