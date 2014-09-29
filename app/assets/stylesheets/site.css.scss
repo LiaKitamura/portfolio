@@ -1,11 +1,19 @@
+nav {
+  .dropdown.open {
+    ul {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
 // *** about section *** //
 
 #about {
   .row.about2 {
     width: 80%;
     margin: auto;
-    overflow: hidden;
-    max-height: 300px;
+    // overflow: hidden;
+    max-height: 405px;
     border-radius: 10px;
 
     h4 {
@@ -13,8 +21,8 @@
     }
     div:first-child,
     .hobby {
-      overflow: auto;
-      min-height: 300px;
+      // overflow: auto;
+      min-height: 405px;
       padding: 5px 20px 20px;
     }
     div:first-child {
@@ -25,10 +33,11 @@
       background: rgba(0, 0, 0, 0.3);
       color: white;
       text-align: justify;
-      overflow: auto;
+      // overflow: auto;
 
       .about-links {
-        margin: 20px auto;
+        margin-top: 115px;
+        font-size: 30px;
         .git {
           color: black;
         }
