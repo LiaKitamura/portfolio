@@ -11,8 +11,10 @@
 
   <!-- use "theme-invert" class on bright backgrounds, also try "text-shadows" class -->
   <body class='text-shadow'>
-    <%= render 'nav' %>
-    <%= yield %>
+    <div class="container-fluid">
+      <%= render 'nav' %>
+      <%= yield %>
+    </div>
     <%= javascript_include_tag 'application' %>
   </body>
 </html>
