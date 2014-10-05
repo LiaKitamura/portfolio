@@ -62,7 +62,9 @@ nav {
   background: rgba(0, 0, 0, 0.3);
 
   .project-thumb {
-    text-align: center;
+    img.img-responsive {
+      margin: auto;
+    }
   }
   .caption {
 
@@ -74,6 +76,7 @@ nav {
       height: 90px;
       overflow: auto;
       font-size: large;
+      text-align: justify;
       a:hover {
         color: deepskyblue;
       }
@@ -116,18 +119,21 @@ nav {
 
 // ** media query ** //
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
   // ** nav ** //
-  .dropdown.open {
-    .dropdown-menu {
-      font-size: 0.9em;
+  .mainmenu {
+    padding-top: 20px;
+    .dropdown.open {
+      .dropdown-menu {
+        font-size: 0.9em;
+      }
     }
   }
 
   // ** home ** //
   .title {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   .subtitle {
     font-size: 1.6em;
@@ -138,6 +144,7 @@ nav {
   }
   .section {
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   // ** about ** //
@@ -148,14 +155,24 @@ nav {
       max-height: none;
       border-radius: initial;
       div:first-child {
-        height: initial;
         border-right: none;
       }
       .about-paragraph {
+        max-height: 100%;
         .about-links {
           margin-top: 30px;
           font-size: 20px;
         }
+      }
+    }
+  }
+
+  // ** projects ** //
+  .thumbnail {
+    .caption {
+      .description {
+        height: initial;
+        font-size: initial;
       }
     }
   }
@@ -174,17 +191,4 @@ nav {
       }
     }
   }
-}
-
-
-
-@media (min-width: 768px) {
-  // .section { padding-top:132px;}
-  #about .about-paragraph {
-
-  }
-}
-
-@media (min-width: 992px) {
-
 }
