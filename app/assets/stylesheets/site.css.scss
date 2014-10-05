@@ -22,24 +22,24 @@ nav {
     div:first-child,
     .hobby {
       // overflow: auto;
-      min-height: 405px;
+      // min-height: 405px;
       padding: 5px 20px 20px;
     }
     div:first-child {
-      height: 300px;
+      // height: 300px;
       border-right: 1px solid deepskyblue;
     }
     .about-paragraph {
       background: rgba(0, 0, 0, 0.3);
       color: white;
       text-align: justify;
-      // overflow: auto;
+      max-height: 290px;
+      overflow: auto;
 
       .about-links {
-        margin-top: 115px;
-        font-size: 30px;
+        font-size: 20px;
         .git {
-          color: black;
+          color: white;
         }
         .linked {
           color: #0482cc;
@@ -48,6 +48,10 @@ nav {
           color: #e51c23;
         }
       }
+    }
+    .tools {
+      background: rgba(0, 0, 0, 0.3);
+      border-top: 1px solid deepskyblue;
     }
   }
 }
@@ -77,11 +81,11 @@ nav {
   }
 }
 
-.tool-list img {
-  display: inline-block;
-  min-width: 45px;
-  min-height: 50px;
-}
+// .tool-list img {
+//   display: inline-block;
+//   min-width: 45px;
+//   min-height: 50px;
+// }
 
 // *** contact *** //
 
@@ -110,7 +114,69 @@ nav {
   }
 }
 
-// **
+// ** media query ** //
+
+@media (max-width: 500px) {
+
+  // ** nav ** //
+  .dropdown.open {
+    .dropdown-menu {
+      font-size: 0.9em;
+    }
+  }
+
+  // ** home ** //
+  .title {
+    font-size: 3em;
+  }
+  .subtitle {
+    font-size: 1.6em;
+  }
+  .tagline {
+    font-size: 1.3em;
+    margin-bottom: 0;
+  }
+  .section {
+    padding-top: 0;
+  }
+
+  // ** about ** //
+  #about {
+    .row.about2 {
+      width: initial;
+      margin: 0;
+      max-height: none;
+      border-radius: initial;
+      div:first-child {
+        height: initial;
+        border-right: none;
+      }
+      .about-paragraph {
+        .about-links {
+          margin-top: 30px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  // ** contact ** //
+  #contact {
+    p,
+    h3 {
+      font-size: 25px;
+    }
+    .list-social {
+      font-size: 300%;
+      li {
+        padding-left: initial;
+        padding-right: initial;
+      }
+    }
+  }
+}
+
+
 
 @media (min-width: 768px) {
   // .section { padding-top:132px;}
