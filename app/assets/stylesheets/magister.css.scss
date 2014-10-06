@@ -1,6 +1,6 @@
-//= depend_on_asset "rock_w_tree.jpg"
+//= depend_on_asset "rock_w_tree.png"
 html {
-	background: lightcoral url('<%= asset_path("rock_w_tree.png") %> ') no-repeat center center fixed;
+	background: lightcoral image-url('rock_w_tree.png') no-repeat center center fixed;
 	// min-height:100%;
 	height:100%;
 	-webkit-background-size: cover;
